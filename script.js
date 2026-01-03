@@ -8,3 +8,22 @@ Understand the problem :
 4. for every multiple of 5 print "Buzz"
 
 */
+
+let userInput = Number(prompt("Type a number:"));
+
+function playGame() {
+    for (let i = 1; i <= userInput; i++){
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("FizzBuzz");
+        } else if (i % 3 === 0) {
+            console.log("Fizz");
+        } else if (i % 5 === 0) {
+            console.log("Buzz");
+        } else {
+            console.log(i);
+        }
+    }
+}
+
+playGame();
+
